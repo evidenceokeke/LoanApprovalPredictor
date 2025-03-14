@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Prediction Result{% endblock %}
+{%  block nav_title %}Loan Approval Predictor{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-body text-center">
+            <h2 class="card-title mb-4">Loan Prediction Result</h2>
+
+            <div class="alert alert-{% if result == 'Approved' %}success{% else %}danger{% endif %}" role="alert">
+                <h4 class="alert-heading">{{ result }}!</h4>
+                <p>Confidence: {{ probability }}%</p>
+            </div>
+
+            <div class="mt-4">
+                <h5>Submitted Details:</h5>
+                <dl class="row">
+                    {% for field, value in form_data.items() %}
+                    <dt class="col-sm-6">{{ field.replace('_', ' ')|title }}</dt>
+                    <dd class="col-sm-6">{{ value }}</dd>
+                    {% endfor %}
+                </dl>
+            </div>
+
+            <a href="/" class="btn btn-primary mt-4">Make Another Prediction</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
