@@ -5,9 +5,10 @@ logistic regression. The model predicts whether a loan application will be appro
 various features.
 
 **Dataset**
+
 The model uses the Loan-Approval-Prediction-Dataset from Kaggle: https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset/data
 
-**Model Detaila**
+**Model Details**
 * Algorithm: Logistic Regression
 * Hyperparameter Tuning: GridSearchCV
 * Regularization: L1 Regularization
@@ -22,6 +23,7 @@ For more details on data processing, training, and model evaluation, check out t
 Jupyter notebook in the repository.
 
 **Web Interface**
+
 You can interact with the trained model through a web interface deployed on Render. You can
 try the model live at: https://loanapprovalpredictor.onrender.com/
 
@@ -30,7 +32,7 @@ try the model live at: https://loanapprovalpredictor.onrender.com/
 * Web Framework: Flask, HTML, CSS, JavaScript
 * Deployment: Render
 
-#########
+
 
 # How to Run Locally
 
