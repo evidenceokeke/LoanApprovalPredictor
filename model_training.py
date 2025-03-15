@@ -18,7 +18,7 @@ loan_approval_df['self_employed'] = loan_approval_df['self_employed'].str.strip(
 X = loan_approval_df.drop(columns=['loan_status', 'loan_id'])
 y = loan_approval_df['loan_status']
 
-# Encode the features
+# Encode the target
 label_encoder = LabelEncoder()
 y_encoded = label_encoder.fit_transform(y)
 

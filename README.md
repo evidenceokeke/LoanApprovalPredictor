@@ -14,8 +14,8 @@ The model uses the Loan-Approval-Prediction-Dataset from Kaggle: https://www.kag
 * Regularization: L1 Regularization
 
 **Driving Features**
-* Credit Score (cibil_score): Exploratory and feature analysis showed that if you have a credit score
- >= 550, you are almost 100% likely to be approved.
+* Credit Score (cibil_score): Exploratory and feature analysis showed that if you have a credit score >= 550, 
+  you are almost 100% likely to be approved.
 * Loan Term (loan_term): If your loan term is less than or equal to 4 years, you may be approved
   even if your credit score is less than 550.
 
